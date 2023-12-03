@@ -2,6 +2,7 @@
 # coding: utf-8
 import random
 import Languages.worker as Lang
+import os
 
 
 def Language(a):
@@ -43,9 +44,11 @@ class Tasye:
         return response
 
 print(help[1])
-input_type = int(input(f"{Language('ask001')} (1): "))
+input_type = input(f"{Language('ask001')} (1): ")
+os.system("cls" if os.name == "nt" else 'clear')
 
 input_type = [int(x) for x in str(input_type)]
+print(input_type)
 
 length = int(input(f"{Language('ask002')} :"))
 
